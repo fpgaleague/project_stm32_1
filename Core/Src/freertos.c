@@ -241,7 +241,6 @@ void StartTask03(void *argument)
 	Sensor_data receivedData;
 	char message[100];
 
-  
   for(;;)
   {
 	  // 从队列接收完整数据包
