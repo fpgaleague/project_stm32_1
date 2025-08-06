@@ -117,7 +117,7 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_QUEUES */
 	sensorDataQueue = xQueueCreate(1, sizeof(Sensor_data));
-	if (sensorDataQueue != NULL)   //这个判断相当于检查这个缓冲区是否申请成功，如果成功才能往里存数据�???
+	if (sensorDataQueue != NULL)   //这个判断相当于检查这个缓冲区是否申请成功，如果成功才能往里存数据�????
 	{
 		HAL_UART_Transmit(&huart1, (uint8_t *)"Queue created successfully!\r\n",
 		strlen("Queue created successfully!\r\n"), HAL_MAX_DELAY);
@@ -214,7 +214,7 @@ void StartTask02(void *argument)
 	      BH1750_ReadData(DataBuff, 2);
 	      LightData=((DataBuff[0]<<8)+DataBuff[1])/1.2f;//数据转换成光强度，单位lx
 	      sensorData.light = LightData;
-	      xQueueOverwrite(sensorDataQueue, &sensorData);  // 原子化更新
+	      xQueueOverwrite(sensorDataQueue, &sensorData);  // 原子化更�?
 	    }
 
 
@@ -241,6 +241,7 @@ void StartTask03(void *argument)
 	Sensor_data receivedData;
 	char message[100];
 
+  
   for(;;)
   {
 	  // 从队列接收完整数据包
