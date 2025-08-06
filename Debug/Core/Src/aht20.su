@@ -1,0 +1,2 @@
+aht20.c:15:7:AHT20_Init	24	static
+aht20.c:27:7:AHT20_Read	40	static

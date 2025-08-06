@@ -1,0 +1,3 @@
+BH1750.c:18:6:BH1750_WriteReg	32	static
+BH1750.c:24:6:BH1750_ReadData	24	static
+BH1750.c:29:7:BH1750_Init	8	static

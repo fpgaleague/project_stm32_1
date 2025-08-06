@@ -1,0 +1,4 @@
+onenet.c:49:7:OneNet_DevLink	184	static
+onenet.c:126:15:OneNet_FillBuf	168	static
+onenet.c:156:6:OneNet_SendData	232	static
+onenet.c:202:6:OneNet_RevPro	144	static
